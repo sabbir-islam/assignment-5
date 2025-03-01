@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8" />
@@ -51,7 +51,7 @@
         </header>
     </div>
     <main class="w-[80%] mx-auto">
-        <section class="flex  mt-4 ">
+        <section class="flex mt-4 pb-16">
             <!-- main dashboard  here  -->
             <div class="w-[80%] bg-white rounded-2xl">
                 <!-- top section  -->
@@ -68,7 +68,7 @@
                     </div>
                     <!-- discover something here  -->
                     <div
-                        class="flex items-center w-[524px] gap-5 py-6 px-12 rounded-xl bg-gradient-to-r from-[rgb(55,82,253)] via-[rgb(108,127,250)] to-[rgb(155,168,248)]">
+                        class="flex items-center w-[524px] gap-5 py-6 px-12 rounded-xl cursor-pointer bg-gradient-to-r from-[rgb(55,82,253)] via-[rgb(108,127,250)] to-[rgb(155,168,248)]">
                         <img src="assets/board.png" alt="" />
                         <p class="text-2xl font-medium text-white">
                             Discover Something New Today!
@@ -88,27 +88,130 @@
                 </div>
                 <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
                 <!-- activity here  -->
-                <div class="m-4">
+                <div class="grid grid-cols-3 gap-5 m-4">
                     <!-- card-1  -->
-                    <div
-                        class="flex flex-col justify-center gap-4 p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
                         <div
-                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal">
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
                             ShopEase</div>
-                        <h1 class="text-2xl font-medium">Fix Mobile Button Issue</h1>
+                        <h1 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h1>
                         <div class="rounded-lg p-4 bg-white">
-                                <div class="text-base font-normal line-clamp-2">
-                                    Debug using Chrome DevTools, check for overlapping elements, and
-                                    ensure onClick works properly and ensure onClick works properly.
-                                </div>
+                            <div class="text-base font-normal line-clamp-2">
+                                Debug using Chrome DevTools, check for overlapping elements, and
+                                ensure onClick works properly and ensure onClick works properly.
+                            </div>
                         </div>
                         <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
-                        <div class="flex justify-between">
+                        <div class="flex justify-between items-center">
                             <div>
-                                <p>Deadline</p>
-                                <h3>21 March 2025</h3>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                        </div>
+                    </div>
+                    <!-- card-2  -->
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                        <div
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
+                            CloudSync</div>
+                        <h1 class="text-2xl font-medium mb-4">Add Dark Mode</h1>
+                        <div class="rounded-lg p-4 bg-white">
+                            <div class="text-base font-normal line-clamp-2">
+                                Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                            </div>
+                        </div>
+                        <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
+                            </div>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                        <div
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
+                            SwiftPay</div>
+                        <h1 class="text-2xl font-medium mb-4">Optimize  Home page</h1>
+                        <div class="rounded-lg p-4 bg-white">
+                            <div class="text-base font-normal line-clamp-2">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly.
+                            </div>
+                        </div>
+                        <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
+                            </div>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                        </div>
+                    </div>
+                    <!-- card-4  -->
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                        <div
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
+                            Meta</div>
+                        <h1 class="text-2xl font-medium mb-4">Add new emoji 🤲</h1>
+                        <div class="rounded-lg p-4 bg-white">
+                            <div class="text-base font-normal line-clamp-2">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly.
+                            </div>
+                        </div>
+                        <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
+                            </div>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                        </div>
+                    </div>
+                    <!-- card-5  -->
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                        <div
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
+                            Google LLC</div>
+                        <h1 class="text-2xl font-medium mb-4">Integrate OpenAI API</h1>
+                        <div class="rounded-lg p-4 bg-white">
+                            <div class="text-base font-normal line-clamp-2">
+                                Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+and ensure onClick works properly.
+                            </div>
+                        </div>
+                        <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
+                            </div>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                        </div>
+                    </div>
+                    <!-- card-6  -->
+                    <div class="flex flex-col justify-center p-6 w-[342px] h-[337px] bg-[rgb(244,247,255)] rounded-2xl">
+                        <div
+                            class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
+                            Glassdoar</div>
+                        <h1 class="text-2xl font-medium mb-4">Improve Job searching</h1>
+                        <div class="rounded-lg p-4 bg-white">
+                            <div class="text-base font-normal line-clamp-2">
+                                Debug using Chrome DevTools, check for overlapping elements, and
+                                ensure onClick works properly and ensure onClick works properly.
+                            </div>
+                        </div>
+                        <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm font-normal">Deadline</p>
+                                <h3 class="text-base font-medium">21 March 2025</h3>
+                            </div>
+                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -117,13 +220,17 @@
             <div class="flex flex-col items-center w-[20%] bg-white ml-2 rounded-2xl py-6">
                 <div class="flex gap-4 mb-4">
                     <img src="assets/activity.png" alt="">
-                    <h1>Activity Log</h1>
+                    <h1 class="text-xl font-medium">Activity Log</h1>
                 </div>
-                <button class="btn">Clear History</button>
+                <button class="btn bg-[rgb(55,82,253)] text-white text-base font-medium px-5 py-3 rounded-lg">Clear History</button>
                 <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
+                <div>
+                    <div class="w-[268px] p-4 mt-4 rounded-lg bg-[rgb(244,247,255)]">
+                        <div class="text-base font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM</div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 </body>
-
 </html>
