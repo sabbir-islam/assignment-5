@@ -63,11 +63,11 @@
                         </div>
                         <div>
                             <h4 class="text-base font-normal">Task Assigned</h4>
-                            <h2 class="text-3xl font-bold ml-2">23</h2>
+                            <h2 class="text-3xl font-bold ml-2">06</h2>
                         </div>
                     </div>
                     <!-- discover something here  -->
-                    <div
+                    <div id="discover-btn"
                         class="flex items-center w-[524px] gap-5 py-6 px-12 rounded-xl cursor-pointer bg-gradient-to-r from-[rgb(55,82,253)] via-[rgb(108,127,250)] to-[rgb(155,168,248)]">
                         <img src="assets/board.png" alt="" />
                         <p class="text-2xl font-medium text-white">
@@ -81,7 +81,8 @@
                         </div>
                         <div class="ml-4">
                             <h2 class="text-2xl font-bold">
-                                <span class="font-normal">Wed,</span><br />july 28 2024
+                                <span id="day" class="font-normal">Wed</span><br>
+                                <span id="date"></span>
                             </h2>
                         </div>
                     </div>
@@ -233,5 +234,7 @@ and ensure onClick works properly.
         </section>
     </main>
     <script src="js/bg-change.js"></script>
+    <script src="js/discovery.js"></script>
+    <script src="js/date.js"></script>
 </body>
 </html>

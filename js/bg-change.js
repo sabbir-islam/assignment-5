@@ -1,4 +1,4 @@
-const colors = ['bg-[rgb(244,247,255)]','bg-slate-400','bg-blue-900','bg-indigo-300','bg-lime-700','bg-purple-950'];
+const colors = ['bg-[rgb(244,247,255)]','bg-slate-400','bg-blue-900','bg-indigo-300','bg-lime-700','bg-violet-400'];
 let i = 0;
 
 document.getElementById("bg-change-btn").addEventListener('click',function(){
