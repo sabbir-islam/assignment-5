@@ -1,3 +1,4 @@
-document.getElementById("discover-btn").addEventListener('click',function(){
-    window.open('discover.html','_blank')
+document.getElementById("discover-btn").addEventListener('click',function(event){
+    event.preventDefault();
+    window.open('discover.html')
 })

@@ -41,7 +41,7 @@
                 <div class="flex gap-7">
                     <div class="flex justify-center items-center bg-[rgb(244,247,255)] w-32 h-16 rounded-3xl">
                         <img src="assets/checkbox.png" alt="" />
-                        <h2 class="text-3xl font-bold ml-2">23</h2>
+                        <h2 id="task-completed" class="text-3xl font-bold ml-2">23</h2>
                     </div>
                     <div id="bg-change-btn"
                         class=" flex justify-center items-center bg-[rgb(244,247,255)] rounded-full w-16 h-16 cursor-pointer">
@@ -63,7 +63,7 @@
                         </div>
                         <div>
                             <h4 class="text-base font-normal">Task Assigned</h4>
-                            <h2 class="text-3xl font-bold ml-2">06</h2>
+                            <h2 id="task-num" class="text-3xl font-bold ml-2">06</h2>
                         </div>
                     </div>
                     <!-- discover something here  -->
@@ -95,7 +95,7 @@
                         <div
                             class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
                             ShopEase</div>
-                        <h1 class="text-2xl font-medium mb-4">Fix Mobile Button Issue</h1>
+                        <h1 id="taskTitle" class="tittle text-2xl font-medium mb-4">Fix Mobile Button Issue</h1>
                         <div class="rounded-lg p-4 bg-white">
                             <div class="text-base font-normal line-clamp-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and
@@ -108,7 +108,7 @@
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button id="'completeBtn'" class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                     <!-- card-2  -->
@@ -128,7 +128,7 @@
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                     <!-- card-3  -->
@@ -149,7 +149,7 @@ and ensure onClick works properly.
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                     <!-- card-4  -->
@@ -157,7 +157,7 @@ and ensure onClick works properly.
                         <div
                             class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
                             Meta</div>
-                        <h1 class="text-2xl font-medium mb-4">Add new emoji 🤲</h1>
+                        <h1 class="text-2xl title2 font-medium mb-4">Add new emoji 🤲</h1>
                         <div class="rounded-lg p-4 bg-white">
                             <div class="text-base font-normal line-clamp-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -170,7 +170,7 @@ and ensure onClick works properly.
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button onclick="handle(document.querySelector('.title2').innerHTML)" class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                     <!-- card-5  -->
@@ -191,7 +191,7 @@ and ensure onClick works properly.
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                     <!-- card-6  -->
@@ -199,7 +199,7 @@ and ensure onClick works properly.
                         <div
                             class="flex justify-center items-center px-6 py-4 w-28 h-11 rounded-lg bg-white text-base font-normal mb-4">
                             Glassdoar</div>
-                        <h1 class="text-2xl font-medium mb-4">Improve Job searching</h1>
+                        <h1 class="text-2xl title font-medium mb-4">Improve Job searching</h1>
                         <div class="rounded-lg p-4 bg-white">
                             <div class="text-base font-normal line-clamp-2">
                                 Debug using Chrome DevTools, check for overlapping elements, and
@@ -212,7 +212,7 @@ and ensure onClick works properly.
                                 <p class="text-sm font-normal">Deadline</p>
                                 <h3 class="text-base font-medium">21 March 2025</h3>
                             </div>
-                            <button class="btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
+                            <button onclick="handle(document.querySelector('.title').innerHTML)" class="Complete-btn btn text-white w-[135px] rounded-lg bg-[rgb(55,82,253)]">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -223,11 +223,11 @@ and ensure onClick works properly.
                     <img src="assets/activity.png" alt="">
                     <h1 class="text-xl font-medium">Activity Log</h1>
                 </div>
-                <button class="btn bg-[rgb(55,82,253)] text-white text-base font-medium px-5 py-3 rounded-lg">Clear History</button>
+                <button id="clearHistoryBtn" class="btn bg-[rgb(55,82,253)] text-white text-base font-medium px-5 py-3 rounded-lg">Clear History</button>
                 <div class="w-full border-t-[0.8px] border-dashed border-[rgba(55,82,253,0.2)] my-4"></div>
-                <div>
+                <div class="activityLog">
                     <div class="w-[268px] p-4 mt-4 rounded-lg bg-[rgb(244,247,255)]">
-                        <div class="text-base font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM</div>
+                        <!-- new task will show here  -->
                     </div>
                 </div>
             </div>
@@ -236,5 +236,7 @@ and ensure onClick works properly.
     <script src="js/bg-change.js"></script>
     <script src="js/discovery.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="js/clear-log.js"></script>
 </body>
 </html>
